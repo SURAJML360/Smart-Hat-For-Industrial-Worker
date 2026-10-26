@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-darkest: #0a0f1e;
+}
+
+body {
+  @apply bg-[#0a0f1e] text-slate-100 font-sans antialiased;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #1e293b; }
+::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #64748b; }
+
+/* Flame pulse animation */
+@keyframes flame-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.08); }
+}
+.animate-flame-pulse {
+  animation: flame-pulse 1s ease-in-out infinite;
+}

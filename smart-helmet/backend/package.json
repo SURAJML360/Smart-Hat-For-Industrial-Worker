@@ -1,0 +1,27 @@
+{
+  "name": "smart-helmet-backend",
+  "version": "1.0.0",
+  "description": "Smart Helmet for Industrial Safety - Backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test src/tests/*.test.js",
+    "seed": "node src/utils/seedAdmin.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "mongoose": "^8.8.0",
+    "socket.io": "^4.8.0",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "zod": "^3.23.0",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.4.0",
+    "dotenv": "^16.4.5",
+    "helmet": "^8.0.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
